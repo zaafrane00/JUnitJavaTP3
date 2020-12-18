@@ -30,7 +30,7 @@ public class Pays {
     }
 
     public void editPerson(Person p){
-       Boolean ok=this.Persons.contains(p);
+       boolean ok=this.Persons.contains(p);
        if(ok){
            int pos=this.Persons.indexOf(p);
            //Person x=this.Persons.get(pos);
