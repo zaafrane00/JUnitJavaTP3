@@ -6,12 +6,14 @@ public class Person {
     private int age;
     private Adress adress;
 
-    public Person(String nom, int age, Adress adress) {
+    public Person(int id,String nom, int age, Adress adress) {
+        this.id = id;
         this.nom = nom;
         this.age = age;
         this.adress = adress;
     }
     public Person(Person p) {
+        this.id = p.id;
         this.nom = p.nom;
         this.age = p.age;
         this.adress = p.adress;
@@ -22,12 +24,12 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "\n Person{" +
                 "id=" + id +
                 ", nom='" + nom + '\'' +
                 ", age=" + age +
                 ", adress=" + adress +
-                '}';
+                "}\n";
     }
 
     public int getId() {

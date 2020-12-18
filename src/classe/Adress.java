@@ -5,6 +5,17 @@ public class Adress {
     private String ville;
     private String num;
 
+    public Adress(String rue, String ville, String num) {
+        this.rue = rue;
+        this.ville = ville;
+        this.num = num;
+    }
+    public Adress(Adress a) {
+        this.rue = a.rue;
+        this.ville = a.ville;
+        this.num = a.num;
+    }
+
     public String getRue() {
         return rue;
     }
